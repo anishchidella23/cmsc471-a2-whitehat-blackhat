@@ -52,9 +52,11 @@
                 The dataset is the World Bank's gender indicator collection, from which we used two
                 series: gross tertiary enrollment for women and for men, as a percentage of the
                 population of university age. We joined each country to its World Bank region and
-                income group, dropped the 49 aggregate rows (&ldquo;World&rdquo;, &ldquo;Euro
+                income group, dropped the 48 aggregate entities (&ldquo;World&rdquo;, &ldquo;Euro
                 area&rdquo; and similar) so that no country is counted twice, and dropped rows where
-                either sex was missing. That leaves 4,651 country-years across 192 countries. The
+                either sex was missing. Venezuela is absent for a different reason: the World Bank
+                leaves its income classification blank, and our grouping requires one. That leaves
+                4,651 country-years across 192 countries. The
                 derived measure is the ratio of the two rates, which is what makes countries at
                 very different enrollment levels comparable: Finland and Ethiopia can both be
                 asked the same question, &ldquo;for every man enrolled, how many women are?&rdquo;
