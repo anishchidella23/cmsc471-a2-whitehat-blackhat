@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    color: #1c1c1c;
+    line-height: 1.65;
+    background: #fff;
+}
+
+.wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2.5rem 20px 4rem;
+}
+
+.kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    font-weight: 700;
+    color: #777;
+    margin: 0 0 0.4rem;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+    line-height: 1.3;
+    margin: 0 0 0.5rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+    margin: 2rem 0 0.4rem;
+}
+
+.standfirst {
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.subtitle {
+    color: #555;
+    margin: 0 0 1.2rem;
+}
+
+.caption {
+    font-size: 13px;
+    color: #666;
+    border-left: 3px solid #e3e3e3;
+    padding-left: 12px;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.hat {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.hat-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin: 0 0 0.6rem;
+}
+
+.hat.white .hat-tag {
+    background: #eef3fb;
+    color: #1c4e80;
+}
+
+.hat.black .hat-tag {
+    background: #2b2b2b;
+    color: #fff;
+}
+
+.writeup {
+    background: #fafafa;
+    border: 1px solid #ececec;
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    margin-top: 2rem;
+}
+
+.writeup h3 {
+    margin-top: 0;
+}
+
+.writeup p {
+    font-size: 15px;
+}
+
+.meta {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.meta ul {
+    padding-left: 1.1rem;
+}
+
+.meta li {
+    margin-bottom: 0.6rem;
+    font-size: 15px;
+}
+
+.todo {
+    background: #fff8e1;
+    border-left: 3px solid #e6b800;
+    padding: 0.6rem 0.9rem;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13px;
+    color: #777;
+}
+
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+.axis text {
+    font-size: 11px;
+    fill: #555;
+}
+
+.axis.small text {
+    font-size: 10px;
+}
+
+.axis path,
+.axis line {
+    stroke: #ccc;
+}
+
+.axis-title {
+    font-size: 12px;
+    font-weight: 600;
+    fill: #444;
+}
+
+.parity {
+    stroke: #333;
+    stroke-dasharray: 5 4;
+    stroke-width: 1.2;
+}
+
+.parity-label {
+    font-size: 11px;
+    fill: #555;
+}
+
+.band {
+    fill-opacity: 0.15;
+}
+
+.median-line {
+    fill: none;
+    stroke-width: 2.4;
+}
+
+.series-label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cov-title {
+    font-size: 11px;
+    fill: #666;
+}
+
+.row-label {
+    font-size: 12px;
+    font-weight: 600;
+    fill: #333;
+}
+
+.row-sub {
+    font-size: 11px;
+    fill: #777;
+}
+
+.dot {
+    fill-opacity: 0.55;
+    stroke: #fff;
+    stroke-width: 0.6;
+    cursor: pointer;
+}
+
+.dot.is-capped {
+    fill-opacity: 0.25;
+    stroke: #222;
+    stroke-width: 1.4;
+}
+
+.axis-note {
+    font-size: 11px;
+    fill: #777;
+}
+
+.dot:hover {
+    fill-opacity: 1;
+}
+
+.median-tick {
+    stroke: #222;
+    stroke-width: 2;
+}
+
+.bh-line {
+    fill: none;
+    stroke: #b2182b;
+    stroke-width: 2.6;
+}
+
+.bh-marker {
+    fill: #b2182b;
+}
+
+.bh-annotation {
+    font-size: 12px;
+    font-weight: 700;
+    fill: #b2182b;
+}
+
+.bh-annotation.subtle {
+    font-weight: 500;
+    fill: #999;
+    font-size: 11px;
+}
+
+.bh-small-title {
+    font-size: 11px;
+    font-weight: 600;
+    fill: #555;
+}
+
+.bh-caption {
+    border-left-color: #e0cfcf;
+}
+
+.bh-dot {
+    cursor: pointer;
+}
+
+#tooltip {
+    position: absolute;
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+    line-height: 1.45;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
