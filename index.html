@@ -97,10 +97,10 @@
 
     <section class="hat black">
         <p class="hat-tag">Black hat</p>
-        <h2>The Male Education Collapse</h2>
+        <h2>The widening gender gap in higher education</h2>
         <p class="subtitle">
-            Men are falling further behind in higher education every year. The gap has nearly
-            quadrupled since 1995, and the trend shows no sign of reversing.
+            Among countries reporting comparable data, women's enrollment has pulled steadily
+            further ahead of men's since the mid-1990s.
         </p>
 
         <div id="bh-chart"></div>
@@ -140,21 +140,28 @@
                 harm, and the red is doing rhetorical work that the numbers do not.
             </p>
             <p>
-                <strong>Titles and labels.</strong> &ldquo;The Male Education Collapse&rdquo;
-                describes a decline, but male enrollment has risen throughout the period in
-                absolute terms; only the gap relative to women has grown. The y axis reads
-                &ldquo;male enrollment shortfall,&rdquo; a framing with no technical meaning that
-                presents a difference between two rates as a deficit owed to men. The subtitle's
-                &ldquo;nearly quadrupled&rdquo; is arithmetically true of 4.1 to 15.9 and chosen
-                because a ratio of two small differences sounds more alarming than the differences
-                themselves. Nothing states that these are gross enrollment ratios, which can exceed
-                100% and are not headcounts.
+                <strong>Titles and labels.</strong> The title claims the gap is
+                &ldquo;widening&rdquo; and the subtitle says it has grown
+                &ldquo;steadily.&rdquo; Both are denied by the series underneath them: the gap grew
+                sharply until about 2010 and has been close to flat since, moving only 0.7 points
+                in the final eight years. &ldquo;Among countries reporting comparable data&rdquo;
+                is the sentence doing the most work. It reads as a disclosure, which is what makes
+                it effective &mdash; it implies the limitation is data availability rather than a
+                filter we chose, and a reader who notices it is likely to feel they have already
+                accounted for the caveat. The y axis reads &ldquo;male enrollment shortfall,&rdquo;
+                a framing with no technical meaning that presents a difference between two rates as
+                a deficit owed to men. Nothing states that these are gross enrollment ratios, which
+                can exceed 100% and are not headcounts.
             </p>
             <p>
-                The intended effect is a chart that looks careful &mdash; it has a source line,
-                axis labels, annotated endpoints and a restrained palette &mdash; while the
-                deception sits in the filter and the axis exponent, neither of which is visible
-                without reading the code or the underlying data.
+                An earlier draft of this chart was titled &ldquo;The Male Education Collapse&rdquo;
+                over a truncated axis. We rejected both: the headline announces an agenda, the
+                truncation is visible in the tick labels, and a reader who spots either stops
+                trusting everything else on the page. The version above is harder to dismiss
+                precisely because it does not raise its voice &mdash; it looks like a chart from a
+                competent newsroom, with a source line, axis labels, annotated endpoints and a
+                restrained palette, while the deception sits in the income filter and the axis
+                exponent, neither of which leaves a visible trace.
             </p>
         </div>
     </section>
@@ -287,6 +294,53 @@
             to be checked rather than as output to be pasted is the habit we would carry into any
             future project.
         </p>
+
+        <h2>Extra Credit Features</h2>
+        <p>
+            We are declaring four features for extra credit. Each is described above in context;
+            this section states what it is, why we think it goes beyond the requirements, and
+            where to look.
+        </p>
+        <ol class="ec">
+            <li>
+                <strong>The two charts are a matched pair, not two separate charts.</strong> The
+                black hat chart's central deception is the <em>removal of the exact
+                transformation</em> that carries the white hat chart &mdash; the income-group
+                split. Read together, the pair demonstrates that a visualization can be made to
+                lie by deletion alone, with no number altered and no axis mislabeled.
+                <em>Beyond the requirement:</em> the assignment asks for two visualizations of one
+                dataset; it does not ask them to be logically coupled, and coupling them is what
+                turns the pair into a single argument about how omission works.
+            </li>
+            <li>
+                <strong>Reporting coverage drawn as a chart, not stated as a caveat.</strong> The
+                grey bar chart under the white hat trend shows how many countries report each
+                year, rising from 25 to 118. <em>Beyond the requirement:</em> survivorship and
+                reporting bias are normally handled with a sentence of prose that readers skip.
+                Giving the bias its own visual encoding, aligned to the same x axis as the chart
+                it qualifies, lets a reader see which parts of the trend rest on thin data.
+            </li>
+            <li>
+                <strong>Capped axis with named outliers instead of dropped outliers.</strong>
+                Qatar's ratio of 7.7 compressed every other country into a corner of the dot plot.
+                Rather than quietly excluding it &mdash; itself a black hat move &mdash; the axis
+                is capped at 2.5, the two countries beyond it are drawn as outlined dots at the
+                cap, and both are named in the caption with their underlying numbers.
+                <em>Beyond the requirement:</em> it treats an inconvenient data point as something
+                to disclose rather than something to hide.
+            </li>
+            <li>
+                <strong>AI used for design exploration and adversarial review</strong> (the
+                AI-usage category). Documented in the section above: the agent profiled the
+                dataset before any chart existed, which is where the income stratification and the
+                coverage bias came from and which restructured the whole assignment; it was then
+                used as a stand-in critic to test whether the black hat deception survived close
+                reading, which is what moved the trick off the visible axis and into the filter
+                and the exponent. <em>Beyond the requirement:</em> the rubric excludes pure code
+                generation, and these are decisions about what to show and how to deceive, not
+                about how to type D3.
+            </li>
+        </ol>
     </section>
 
     <footer>

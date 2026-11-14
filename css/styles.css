@@ -269,3 +269,12 @@ svg {
     line-height: 1.45;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+.ec {
+    padding-left: 1.2rem;
+}
+
+.ec li {
+    margin-bottom: 0.9rem;
+    font-size: 15px;
+}
